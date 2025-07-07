@@ -21,7 +21,7 @@ This project combines the Day 1 main assignment and Mini coding assignments for 
 
 ## 🚀 Live Link
 
-[View Live Project](https://yourusername.github.io/semantic-dashboard-akshat)
+[View Live Project](https://its-akshatjain.github.io/Omniful-Assignments/index.html)
 
 ## 📂 How to Use
 
