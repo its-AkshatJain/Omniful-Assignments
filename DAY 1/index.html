@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Business Analytics</title>
+    <meta name="description" content="Business analytics dashboard with key metrics and insights">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header>
+        <h1>Business Analytics Dashboard</h1>
+        <nav aria-label="Primary Navigation">
+            <ul>
+                <li><a href="index.html" class="active">Dashboard</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="form.html">Form</a></li>
+                <li><a href="landing.html">Landing Page</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <aside>
+            <h2>Quick Navigation</h2>
+            <nav aria-label="Sidebar Navigation">
+                <ul>
+                    <li><a href="#overview">Overview</a></li>
+                    <li><a href="#analytics">Analytics</a></li>
+                    <li><a href="#reports">Reports</a></li>
+                    <li><a href="#settings">Settings</a></li>
+                    <li><a href="#users">User Management</a></li>
+                    <li><a href="#billing">Billing</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main>
+            <section id="overview" aria-labelledby="stats-heading">
+                <h2 id="stats-heading">Key Performance Metrics</h2>
+                <div class="stats-grid">
+                    <article class="stat-card">
+                        <h3>Total Users</h3>
+                        <div class="number">12,847</div>
+                        <div class="change positive">+8.2% from last month</div>
+                    </article>
+                    
+                    <article class="stat-card">
+                        <h3>Revenue</h3>
+                        <div class="number">₹5,67,890</div>
+                        <div class="change positive">+15.3% from last month</div>
+                    </article>
+                    
+                    <article class="stat-card">
+                        <h3>Conversion Rate</h3>
+                        <div class="number">3.8%</div>
+                        <div class="change negative">-0.5% from last month</div>
+                    </article>
+                    
+                    <article class="stat-card">
+                        <h3>Active Sessions</h3>
+                        <div class="number">1,234</div>
+                        <div class="change positive">+12.1% from last week</div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="recent-activity">
+                <h2>Recent Activity</h2>
+                <ul class="activity-list">
+                    <li class="activity-item">
+                        <div class="activity-text">
+                            <strong>New user registration</strong><br>
+                            <small>User ID: 12847 signed up from Mumbai</small>
+                        </div>
+                        <div class="activity-time">2 minutes ago</div>
+                    </li>
+                    <li class="activity-item">
+                        <div class="activity-text">
+                            <strong>Payment received</strong><br>
+                            <small>₹2,500 from Premium subscription</small>
+                        </div>
+                        <div class="activity-time">15 minutes ago</div>
+                    </li>
+                    <li class="activity-item">
+                        <div class="activity-text">
+                            <strong>System backup completed</strong><br>
+                            <small>Daily backup finished successfully</small>
+                        </div>
+                        <div class="activity-time">1 hour ago</div>
+                    </li>
+                    <li class="activity-item">
+                        <div class="activity-text">
+                            <strong>Email campaign sent</strong><br>
+                            <small>Newsletter sent to 8,456 subscribers</small>
+                        </div>
+                        <div class="activity-time">3 hours ago</div>
+                    </li>
+                    <li class="activity-item">
+                        <div class="activity-text">
+                            <strong>Server maintenance</strong><br>
+                            <small>Database optimization completed</small>
+                        </div>
+                        <div class="activity-time">6 hours ago</div>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="quick-actions" aria-labelledby="actions-heading">
+                <h2 id="actions-heading">Quick Actions</h2>
+                <div class="stats-grid">
+                    <article class="stat-card">
+                        <h3>Generate Report</h3>
+                        <p>Create monthly analytics report</p>
+                        <button type="button">Generate</button>
+                    </article>
+                    
+                    <article class="stat-card">
+                        <h3>Export Data</h3>
+                        <p>Download user data in CSV format</p>
+                        <button type="button">Export</button>
+                    </article>
+                    
+                    <article class="stat-card">
+                        <h3>Send Newsletter</h3>
+                        <p>Send weekly newsletter to subscribers</p>
+                        <button type="button">Send</button>
+                    </article>
+                    
+                    <article class="stat-card">
+                        <h3>Backup Database</h3>
+                        <p>Create manual database backup</p>
+                        <button type="button">Backup</button>
+                    </article>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Business Analytics Dashboard. All rights reserved.</p>
+    </footer>
+</body>
+</html>

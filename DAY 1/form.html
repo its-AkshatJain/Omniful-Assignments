@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration - Multi-Step Form</title>
+    <meta name="description" content="Complete user registration form with multiple steps and validation">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header>
+        <h1>User Registration</h1>
+        <nav aria-label="Primary Navigation">
+            <ul>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="form.html" class="active">Form</a></li>
+                <li><a href="landing.html">Landing Page</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container single-column">
+        <main>
+            <h2>Create Your Account</h2>
+            <p>Please fill out all sections to complete your registration. All fields marked with * are required.</p>
+            
+            <form action="#" method="post" aria-labelledby="registration-form" novalidate>
+                <fieldset>
+                    <legend id="registration-form">Step 1: Personal Information</legend>
+                    
+                    <div class="form-group">
+                        <label for="first-name">First Name *</label>
+                        <input 
+                            type="text" 
+                            id="first-name" 
+                            name="firstName" 
+                            required 
+                            aria-required="true"
+                            aria-describedby="first-name-help"
+                        >
+                        <div id="first-name-help" class="form-help">Enter your first name as it appears on official documents</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="last-name">Last Name *</label>
+                        <input 
+                            type="text" 
+                            id="last-name" 
+                            name="lastName" 
+                            required 
+                            aria-required="true"
+                        >
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="date-of-birth">Date of Birth *</label>
+                        <input 
+                            type="date" 
+                            id="date-of-birth" 
+                            name="dateOfBirth" 
+                            required 
+                            aria-required="true"
+                            aria-describedby="dob-help"
+                        >
+                        <div id="dob-help" class="form-help">You must be 18 or older to register</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="gender">Gender</label>
+                        <select id="gender" name="gender" aria-describedby="gender-help">
+                            <option value="">Select your gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                            <option value="prefer-not-to-say">Prefer not to say</option>
+                        </select>
+                        <div id="gender-help" class="form-help">This information helps us personalize your experience</div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Step 2: Contact Information</legend>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            required 
+                            aria-required="true"
+                            aria-describedby="email-help"
+                        >
+                        <div id="email-help" class="form-help">We'll never share your email with third parties</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input 
+                            type="tel" 
+                            id="phone" 
+                            name="phone" 
+                            required 
+                            aria-required="true"
+                            placeholder="+91 98765 43210"
+                            aria-describedby="phone-help"
+                        >
+                        <div id="phone-help" class="form-help">Include country code for international numbers</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="address">Street Address *</label>
+                        <textarea 
+                            id="address" 
+                            name="address" 
+                            rows="3" 
+                            required 
+                            aria-required="true"
+                            aria-describedby="address-help"
+                        ></textarea>
+                        <div id="address-help" class="form-help">Enter your complete postal address</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="city">City *</label>
+                        <input 
+                            type="text" 
+                            id="city" 
+                            name="city" 
+                            required 
+                            aria-required="true"
+                        >
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="state">State/Province *</label>
+                        <input 
+                            type="text" 
+                            id="state" 
+                            name="state" 
+                            required 
+                            aria-required="true"
+                        >
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="postal-code">Postal Code *</label>
+                        <input 
+                            type="text" 
+                            id="postal-code" 
+                            name="postalCode" 
+                            required 
+                            aria-required="true"
+                            placeholder="400001"
+                        >
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Step 3: Terms and Conditions</legend>
+                    
+                    <div class="checkbox-group">
+                        <input 
+                            type="checkbox" 
+                            id="promotions" 
+                            name="promotions" 
+                            value="yes"
+                        >
+                        <label for="promotions">Receive promotional emails about new features and offers</label>
+                    </div>
+                    
+                    <div class="checkbox-group">
+                        <input 
+                            type="checkbox" 
+                            id="terms" 
+                            name="terms" 
+                            value="agreed" 
+                            required 
+                            aria-required="true"
+                            aria-describedby="terms-help"
+                        >
+                        <label for="terms">I agree to the Terms of Service and Privacy Policy *</label>
+                        <div id="terms-help" class="form-help">Please read our <a href="#" target="_blank">Terms of Service</a> and <a href="#" target="_blank">Privacy Policy</a></div>
+                    </div>
+                    
+                    <div class="checkbox-group">
+                        <input 
+                            type="checkbox" 
+                            id="age-confirmation" 
+                            name="ageConfirmation" 
+                            value="confirmed" 
+                            required 
+                            aria-required="true"
+                        >
+                        <label for="age-confirmation">I confirm that I am 18 years of age or older *</label>
+                    </div>
+                </fieldset>
+
+                <div class="form-group">
+                    <button type="submit">Create Account</button>
+                    <button type="reset" class="btn-secondary">Clear Form</button>
+                </div>
+            </form>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 User Registration System. Your privacy and security are our priority.</p>
+    </footer>
+</body>
+</html>
